@@ -8,6 +8,11 @@
     }
   ],
   "env": {
+    "SETLIST_API_KEY" : { "required": true },
+    "SPOTIFY_CLIENT_ID" : { "required": true },
+    "SPOTIFY_CLIENT_SECRET" : { "required": true },
+    "REDIRECT_URI" : { "required": true },
+    "APP_SECRET_KEY" : { "required": true }
   },
   "formation": {
   },
