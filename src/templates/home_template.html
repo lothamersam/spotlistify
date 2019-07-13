@@ -1,15 +1,9 @@
-<html>
-    {% include 'fragments/meta_fragment.html' %}
+{% extends 'main_layout_template.html' %}
 
-    <body>
-        {% include 'fragments/header_fragment.html' %}
-
-        <div class="container top-div">
-            <div class="card">
-                <div class="card-content">
-                    test
-                </div>
-            </div>
+{% block content %}
+    <div class="card">
+        <div class="card-content">
+            <a href="{{ url_for('spotify_blueprint.auth') }}">Authenticate Spotify</a>
         </div>
-    </body>
-</html>
+    </div>
+{% endblock content %}

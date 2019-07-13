@@ -1,0 +1,11 @@
+<html>
+    {% include 'fragments/meta_fragment.html' %}
+
+    <body>
+        {% include 'fragments/header_fragment.html' %}
+
+        <div class="container top-div">
+            {% block content %}{% endblock content %} 
+        </div>
+    </body>
+</html>
