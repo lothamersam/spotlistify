@@ -1,0 +1,18 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="{{ url_for('home_blueprint.show_index') }}" class="brand-logo center">Spotlistify</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="{{ url_for('home_blueprint.show_index') }}">Home</a></li>
+            <li><a href="#">Playlists</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <form>
+                <div class="input-field">
+                    <input id="search" placeholder="Search..." type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </ul>
+    </div>
+</nav>

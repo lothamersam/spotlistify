@@ -7,5 +7,5 @@ controller = Blueprint('home_blueprint', __name__)
 ### BLUEPRINT ROUTES ###
 
 @controller.route('/')
-def show():
+def show_index():
     return render_template('home_template.html')
