@@ -1,0 +1,10 @@
+.top-div {
+    margin-top: 2rem;
+}
+.brand-logo {
+    font-family: 'Rock Salt', cursive;
+}
+nav .nav-wrapper {
+    background-image: url('/img/nav-background.png');
+    background-repeat: no-repeat;
+}
