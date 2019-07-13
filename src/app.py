@@ -1,10 +1,12 @@
 from flask import Flask
+from main.blueprints import error_blueprint
 from main.blueprints import home_blueprint
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static/')
 
 ### BLUEPRINTS ###
 app.register_blueprint(home_blueprint.controller)
+app.register_blueprint(error_blueprint.controller)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
