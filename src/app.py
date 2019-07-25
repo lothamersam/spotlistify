@@ -5,6 +5,7 @@ from os.path import join, dirname
 from main.blueprints import error_blueprint
 from main.blueprints import home_blueprint
 from main.blueprints import spotify_blueprint
+from main.blueprints import setlist_blueprint
 
 app = Flask(__name__, static_folder='static/')
 
@@ -14,6 +15,7 @@ load_dotenv(join(dirname(__file__), '..\.env'))
 app.register_blueprint(home_blueprint.controller)
 app.register_blueprint(error_blueprint.controller)
 app.register_blueprint(spotify_blueprint.controller)
+app.register_blueprint(setlist_blueprint.controller)
 
 app.secret_key = os.environ.get('APP_SECRET_KEY') 
 
